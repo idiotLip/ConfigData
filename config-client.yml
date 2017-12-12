@@ -4,3 +4,17 @@ lucky-word: mmb
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
+      ---
+  spring:
+    profiles: subject
+  words: 你,我,他
+  
+  ---
+  spring:
+    profiles: article
+  words: 在月球,在厕所,在床上
+
+  ---
+  spring:
+    profiles: verb
+  words: 写代码,洗衣服,打篮球
